@@ -11,19 +11,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IncomesExpensesTracker">
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:theme="@style/Theme.IncomesExpensesTracker" />
+        <!--        <activity-->
+        <!--            android:name=".ModifyDetails"-->
+        <!--            android:exported="false" />-->
+        <!--        <activity-->
+        <!--            android:name=".DateWiseReport"-->
+        <!--            android:exported="false" />-->
+        <!--        <activity-->
+        <!--            android:name=".MainActivity2"-->
+        <!--            android:exported="false"-->
+        <!--            android:theme="@style/Theme.IncomesExpensesTracker" />-->
+        <!--        <activity-->
+        <!--            android:name=".MainActivity"-->
+        <!--            android:exported="true">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+
         <activity
             android:name=".MainActivity"
+            android:label="Dashboard"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DataEntry"
+            android:label="Data Entry" />
+        <activity
+            android:name=".TodayDetails"
+            android:label="Today Details" />
+        <activity
+            android:name=".DateWiseReport"
+            android:label="Date Wise Report" />
+        <activity
+            android:name=".ModifyDetails"
+            android:label="Modify Details" />
     </application>
-
 </manifest>
+

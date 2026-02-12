@@ -15,36 +15,34 @@ public class DataEntry extends AppCompatActivity {
     Button btnSubmit;
     MyDatabase myDatabase;
 
-    protected void onCreate(Bundle b){
+    protected void onCreate(Bundle b) {
         super.onCreate(b);
         setContentView(R.layout.data_entry);
 
-        edtDate=findViewById(R.id.edtDate);
-        edtAmount=findViewById(R.id.edtAmount);
-        spTitle=findViewById(R.id.spTitle);
-        btnSubmit=findViewById(R.id.btnSubmit);
-        myDatabase=new MyDatabase(this);
+        edtDate = findViewById(R.id.edtDate);
+        edtAmount = findViewById(R.id.edtAmount);
+        spTitle = findViewById(R.id.spTitle);
+        btnSubmit = findViewById(R.id.btnSubmit);
+        myDatabase = new MyDatabase(this);
         edtDate.setText(MainActivity.getCurrentDate());
 
-        btnSubmit.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-            //getting data
-                String date=edtDate.getText().toString();
-                String title=spTitle.getSelectedItem().toString();
-                String amount=edtAmount.getText().toString();
-            //validating data
-                if(date.equals("")) {
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                //getting data
+                String date = edtDate.getText().toString();
+                String title = spTitle.getSelectedItem().toString();
+                String amount = edtAmount.getText().toString();
+                //validating data
+                if (date.equals("")) {
                     Toast.makeText(DataEntry.this, "Please Enter Date !", Toast.LENGTH_LONG).show();
-                } else if(amount.equals("")) {
+                } else if (amount.equals("")) {
                     Toast.makeText(DataEntry.this, "Please Enter Amount !", Toast.LENGTH_LONG).show();
-                } else if(title.equals("Select Title")) {
+                } else if (title.equals("Select Title")) {
                     Toast.makeText(DataEntry.this, "Please Select Title !", Toast.LENGTH_LONG).show();
-                }else{
+                } else {
                     //checking income or expenses
-                    if(title.equals("Income"))
-                        myDatabase.insertData(date,amount,"0");
-                    else
-                        myDatabase.insertData(date,"0",amount);
+                    if (title.equals("Income")) myDatabase.insertData(date, amount, "0");
+                    else myDatabase.insertData(date, "0", amount);
                     Toast.makeText(DataEntry.this, "Data Inserted Successfully !", Toast.LENGTH_LONG).show();
                     edtAmount.setText("");
                     spTitle.setSelection(0);

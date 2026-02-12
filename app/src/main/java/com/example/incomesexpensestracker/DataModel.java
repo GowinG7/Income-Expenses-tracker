@@ -6,22 +6,26 @@ public class DataModel {
     private int income;
     private int expenses;
 
-    public DataModel(int id, String date, int income, int expenses){
-        this.id=id;
-        this.date=date;
-        this.income=income;
-        this.expenses=expenses;
+    public DataModel(int id, String date, int income, int expenses) {
+        this.id = id;
+        this.date = date;
+        this.income = income;
+        this.expenses = expenses;
     }
-    public int getId(){
+
+    public int getId() {
         return id;
     }
-    public String getDate(){
+
+    public String getDate() {
         return date;
     }
-    public int getIncome(){
+
+    public int getIncome() {
         return income;
     }
-    public int getExpenses(){
+
+    public int getExpenses() {
         return expenses;
     }
 }

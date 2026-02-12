@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relat"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/relat">
+    android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/txtDate"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
+        android:layout_margin="10dp"
         android:text="Date: 2025-02-12"
-        android:layout_margin="10dp"
-        android:id="@+id/txtDate"
-        android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Income: 20000"
-        android:layout_margin="10dp"
         android:id="@+id/txtIncome"
-        android:textStyle="bold"
-        android:layout_toRightOf="@+id/txtDate"
-        android:textColor="#3F51B5"
-        android:visibility="gone"
-        android:textSize="18sp"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Expenses: 10000"
         android:layout_margin="10dp"
-        android:id="@+id/txtExpenses"
-        android:textStyle="bold"
         android:layout_toRightOf="@+id/txtDate"
+        android:text="Income: 20000"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtExpenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtDate"
+        android:text="Expenses: 10000"
         android:textColor="#FF4081"
-        android:visibility="gone"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
 
 </RelativeLayout>

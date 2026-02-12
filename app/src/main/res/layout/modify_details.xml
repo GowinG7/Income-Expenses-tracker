@@ -8,6 +8,20 @@
     android:orientation="vertical"
     tools:context=".ModifyDetails">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Modify Details: "
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
     <EditText
         android:id="@+id/edtDate"
         android:layout_width="match_parent"

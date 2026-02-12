@@ -5,13 +5,26 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Today's Details: "
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
     <!-- Hint at the top -->
     <TextView
         android:id="@+id/txtHintTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Click on a record to update or delete"
+        android:hint="[Click on a record to update or delete]"
         android:textColor="#FF5722"
         android:textSize="18sp"
         android:textStyle="italic" />

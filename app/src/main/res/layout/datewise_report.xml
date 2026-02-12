@@ -7,12 +7,25 @@
     android:padding="10dp"
     tools:context=".DateWiseReport">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Date Wise Report:"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
     <!-- Hint -->
     <TextView
         android:id="@+id/txtHintTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter date in the format: YYYY-MM-DD"
+        android:hint="[date format: YYYY-MM-DD eg: 2025-02-02] "
         android:textSize="18sp"
         android:textStyle="bold" />
 

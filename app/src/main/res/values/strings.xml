@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Incomes &amp; Expenses tracker</string>
+
+    <string-array name="title">
+        <item>Select Title</item>
+        <item>Income</item>
+        <item>Expenses</item>
+    </string-array>
 </resources>

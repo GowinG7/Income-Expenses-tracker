@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -67,14 +68,15 @@ public class RecyclerViewAdapter
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtDate, txtIncome, txtExpenses;
-        RelativeLayout relativeLayout;
+        LinearLayout relativeLayout; // change RelativeLayout → LinearLayout
 
         public ViewHolder(View itemView) {
             super(itemView);
             txtDate = itemView.findViewById(R.id.txtDate);
             txtIncome = itemView.findViewById(R.id.txtIncome);
             txtExpenses = itemView.findViewById(R.id.txtExpenses);
-            relativeLayout = itemView.findViewById(R.id.relat);
+            relativeLayout = itemView.findViewById(R.id.relat); // now LinearLayout
         }
     }
+
 }

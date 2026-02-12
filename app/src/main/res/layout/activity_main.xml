@@ -8,11 +8,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/dashboard"
+        android:id="@+id/SpendWise"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Dashboard"
+        android:text="SpendWise"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -20,7 +20,7 @@
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/dashboard"
+        android:layout_below="@+id/SpendWise"
         android:layout_margin="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
@@ -129,7 +129,7 @@
                 android:gravity="center"
                 android:lines="2"
                 android:padding="1dp"
-                android:text="View Todays's Details"
+                android:text="View Today's Details"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
